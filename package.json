@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "name": "gist",
+  "version": "1.0.0",
+  "main": "work.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaKan2/gist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaKan2/gist/issues"
+  },
+  "homepage": "https://github.com/NikitaKan2/gist#readme",
+  "description": ""
 }

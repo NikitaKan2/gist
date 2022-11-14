@@ -8,7 +8,7 @@ const numbersSquared = (numbers) => numbers.map(number => Math.pow(number, 2));
 
 const uniqNumbers = (numbers) => _.uniq(numbers);
 
-const isAboveZero = (numbers) => numbers.map(number => number > 0);
+const isAboveZero = (numbers) => numbers.every(number => number > 0);
 
 const lessThanZero = (numbers) => numbers.filter(number => number < 0);
 
@@ -18,7 +18,7 @@ const isArray = (elements) => elements.filter(element => Array.isArray(element))
 
 // Strings 
 
-const string = 'JS is the best 53425programming5234532 language33313';
+const string = 'bcef12345678ghi654321klm';
 
 const wordWithLengthFour = (string) => {
     const splitStr = string.split(' ')
@@ -26,7 +26,9 @@ const wordWithLengthFour = (string) => {
     return lengthWord.length
 }
 
-const sixLength = 
+const lengthEqualSix = (string) => {
+    const [substr, ] = string.match(/(?<![0-9])([0-9]{6})(?![0-9])/);
+    return substr
+}
 
-
-console.log(FindNumWithSixSymb(string))
+console.log(lengthEqualSix(string))
